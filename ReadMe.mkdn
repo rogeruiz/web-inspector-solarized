@@ -1,0 +1,5 @@
+### Solarized Port to the Webkit Web Inspector
+__by Roger Steve Ruiz__
+___
+
+This is a Compass project of the Solarized color theme for the Webkit Web Inspector.

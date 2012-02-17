@@ -1,0 +1,96 @@
+/*=== Custom User Stylesheet for Webkit Web Inspectors
+@desc		This Custom User Stylesheet contains styles for the following themes, Solarized Dark and Solarized Light.
+@author	Roger Steve Ruiz
+@email	hi@rogeruiz.com
+==================================================*/
+/* Known Bugs === The !important implementation is necessary on certain styles because the user-agent stylesheet & Custom.css file seem to be at odds when it comes to defining the Web Inspectors tools */
+/* Elements Panel === Markup */
+#elements-content { background-color: #002b36; font-family: M1m, monospace !important; font-size: 12px !important; font-weight: 100; }
+#elements-content .hovered, #elements-content .selected, #elements-content .selected { background-color: #073642; color: #93a1a1 !important; }
+#elements-content .highlight { color: #93a1a1 !important; }
+#elements-content ol { border-left: 1px solid #073642; }
+#elements-content ol .webkit-html-comment { color: #586e75 !important; }
+#elements-content ol .webkit-html-doctype { color: #839496 !important; }
+#elements-content ol .webkit-html-attribute .webkit-html-attribute-name { color: #839496 !important; }
+#elements-content ol .webkit-html-attribute .webkit-html-attribute-value { color: #859900 !important; }
+#elements-content ol .webkit-html-tag { color: #839496 !important; }
+#elements-content ol .webkit-html-tag .webkit-html-tag-name { color: #268bd2 !important; }
+#elements-content ol .webkit-html-text-node { color: #657b83; }
+#elements-content ol .webkit-html-css-node .webkit-css-selector { color: #839496 !important; }
+#elements-content ol .webkit-html-css-node .webkit-css-property { color: #dc322f !important; }
+#elements-content ol .webkit-html-css-node .webkit-css-keyword, #elements-content ol .webkit-html-css-node .webkit-css-number { color: #268bd2 !important; }
+
+/* Elements Panel === Sidebar */
+#elements-sidebar { background: #002b36 !important; }
+#elements-sidebar .source-code { background: #073642 !important; color: #839496 !important; }
+#elements-sidebar .pane .monospace { font-family: Inconsolata, monospace !important; font-size: 12px !important; }
+#elements-sidebar .pane .styles-section { background: #002b36 !important; color: #839496; }
+#elements-sidebar .pane .styles-section.read-only { background: #073642 !important; }
+#elements-sidebar .pane .styles-section.read-only .subtitle { background-color: #002b36 !important; color: #839496 !important; }
+#elements-sidebar .pane .styles-section .header .subtitle .webkit-html-resource-link { background-color: #073642; color: #839496 !important; }
+#elements-sidebar .pane .styles-section .properties .webkit-css-property, #elements-sidebar .pane .styles-section .properties .webkit-css-at-rule { color: #dc322f !important; }
+#elements-sidebar .pane .styles-section .properties .value { color: #268bd2 !important; }
+#elements-sidebar .pane .info { background: #002b36 !important; color: #839496 !important; }
+#elements-sidebar .pane .section { background: #002b36; }
+#elements-sidebar .pane .section .header .title { color: #93a1a1; }
+#elements-sidebar .pane .section .properties { color: #268bd2; }
+#elements-sidebar .pane .section .properties .name { color: #b58900 !important; }
+#elements-sidebar .pane .section .properties .dimmed { color: #cb4b16 !important; }
+#elements-sidebar .pane .section .properties .console-formatted-null { color: #586e75 !important; }
+#elements-sidebar .pane .section .properties .console-formatted-string { color: #859900 !important; }
+#elements-sidebar .pane .section .properties .console-formatted-number { color: #268bd2 !important; }
+#elements-sidebar .pane .section .properties .console-formatted-object, #elements-sidebar .pane .section .properties .console-formatted-node { color: #839496 !important; }
+#elements-sidebar .pane .section .properties .console-formatted-array { color: #d33682 !important; }
+#elements-sidebar .pane .metrics { background: #002b36 !important; }
+#elements-sidebar .pane .metrics .label, #elements-sidebar .pane .metrics .top, #elements-sidebar .pane .metrics .left, #elements-sidebar .pane .metrics .right, #elements-sidebar .pane .metrics .bottom { color: #839496 !important; }
+#elements-sidebar .pane .metrics .margin { background: #073642 !important; opacity: .95; border-color: #839496 !important; }
+#elements-sidebar .pane .metrics .border { background-color: #002b36 !important; border-color: #839496 !important; }
+#elements-sidebar .pane .metrics .padding { background: #073642 !important; opacity: .95; border-color: #839496 !important; }
+#elements-sidebar .pane .metrics .content { background-color: #002b36 !important; color: #839496 !important; border-color: #839496 !important; }
+#elements-sidebar .pane > .title, #elements-sidebar .pane .styles-sidebar-separator { background-image: -webkit-gradient(linear, left top, left bottom, from(#002b36), color-stop(0.05, #657b83), color-stop(0.05, #657b83), to(#002b36)) !important; color: #839496 !important; text-shadow: #073642 0 1px 0 !important; border-top: 1px solid #073642 !important; border-bottom: 1px solid #073642 !important; }
+
+/* Console Panel === Console */
+#console-view { background: #002b36 !important; color: #839496; }
+#console-view .monospace { font-family: Inconsolata, monospace !important; font-size: 12px !important; }
+#console-view #console-messages .console-group .console-message { border-bottom: 1px solid #073642 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array { color: #d33682; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-comment { color: #586e75 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-doctype { color: #839496 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-attribute .webkit-html-attribute-name { color: #839496 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-attribute .webkit-html-attribute-value { color: #859900 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-tag { color: #839496 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-tag .webkit-html-tag-name { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-text-node { color: #657b83 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-css-node .webkit-css-selector { color: #839496 !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-css-node .webkit-css-property { color: #dc322f !important; }
+#console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-css-node .webkit-css-keyword, #console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-css-node .webkit-css-number { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-string { color: #859900 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-number { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-message .webkit-html-resource-link { color: #839496 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-null { color: #586e75 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-string { color: #859900 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-number { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object { color: #6c71c4 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .header .title { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties { color: #268bd2; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .name { color: #b58900 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .dimmed { color: #cb4b16 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .console-formatted-null { color: #586e75 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .console-formatted-string { color: #859900 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .console-formatted-number { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .console-formatted-object, #console-view #console-messages .console-group .console-message .console-formatted-object .properties .console-formatted-function { color: #6c71c4 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-object .properties .console-formatted-array { color: #d33682 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-function { color: #6c71c4 !important; }
+#console-view #console-messages .console-group .console-message .console-formatted-array { color: #d33682 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text { color: #dc322f !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .header .title { color: #dc322f !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties { color: #268bd2; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .name { color: #b58900 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .dimmed { color: #cb4b16 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .console-formatted-null { color: #586e75 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .console-formatted-string { color: #859900 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .console-formatted-number { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .console-formatted-object, #console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .console-formatted-function { color: #6c71c4 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formatted-object .properties .console-formatted-array { color: #d33682 !important; }
+#console-view #console-messages .console-group .console-error-level .console-message-text .console-formated-node .header .title { color: #268bd2 !important; }
+#console-view #console-messages .console-group .console-warning-level { color: #b58900 !important; }

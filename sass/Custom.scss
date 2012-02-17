@@ -1,0 +1,325 @@
+/*=== Custom User Stylesheet for Webkit Web Inspectors
+@desc		This Custom User Stylesheet contains styles for the following themes, Solarized Dark and Solarized Light.
+@author	Roger Steve Ruiz
+@email	hi@rogeruiz.com
+==================================================*/
+
+/* Known Bugs
+ * ===
+ * The !important implementation is necessary on certain styles
+ * because the user-agent stylesheet & Custom.css file seem to
+ * be at odds when it comes to defining the Web Inspectors tools
+ */
+
+/* Elements Panel
+ * ===
+ * Markup
+ */
+#elements-content {
+  background-color: #002b36;
+  font-family: M+ 1m , monospace !important;
+  font-size: 12px !important;
+  font-weight: 100;
+  .hovered,
+  .selected,
+  .selected {
+    background-color: #073642;
+    color: #93a1a1 !important;
+  }
+  .highlight {
+    color: #93a1a1 !important;
+  }
+  ol {
+    border-left: 1px solid #073642; // tab stop
+    .webkit-html-comment {
+      color: #586e75 !important;
+    }
+    .webkit-html-doctype {
+      color: #839496 !important;
+    }
+    .webkit-html-attribute .webkit-html-attribute-name {
+      color: #839496 !important;
+    }
+    .webkit-html-attribute .webkit-html-attribute-value {
+      color: #859900 !important;
+    }
+    .webkit-html-tag {
+      color: #839496 !important;
+      .webkit-html-tag-name {
+        color: #268bd2 !important;
+      }
+    }
+    .webkit-html-text-node {
+      color: #657b83;
+    }
+    .webkit-html-css-node {
+      .webkit-css-selector {
+        color: #839496 !important;
+      }
+      .webkit-css-property {
+        color: #dc322f !important;
+      }
+      .webkit-css-keyword,
+      .webkit-css-number {
+        color: #268bd2 !important;
+      }
+    }
+  }
+}
+
+/* Elements Panel
+ * ===
+ * Sidebar
+ */
+#elements-sidebar {
+  background: #002b36 !important;
+  .source-code {
+    background: #073642 !important;
+    color: #839496 !important;
+  }
+  .pane {
+    .monospace {
+      font-family: Inconsolata, monospace !important;
+      font-size: 12px !important;
+    }
+    .styles-section {
+      background: #002b36 !important;
+      color: #839496;
+      &.read-only {
+        background: #073642 !important;
+        .subtitle {
+          background-color: #002b36 !important;
+          color: #839496 !important;
+        }
+      }
+      .header .subtitle .webkit-html-resource-link {
+        background-color: #073642;
+        color: #839496 !important;
+      }
+      .properties {
+        .webkit-css-property, .webkit-css-at-rule {
+          color: #dc322f !important;
+        }
+        .value {
+          color: #268bd2 !important;
+        }
+      }
+    }
+    .info {
+      background: #002b36 !important;
+      color: #839496 !important;
+    }
+    .section {
+      background: #002b36;
+      .header .title {
+        color: #93a1a1;
+      }
+      .properties {
+        color: #268bd2;
+        .name {
+          color: #b58900 !important;
+        }
+        .dimmed {
+          color: #cb4b16 !important;
+        }
+        .console-formatted-null {
+          color: #586e75 !important;
+        }
+        .console-formatted-string {
+          color: #859900 !important;
+        }
+        .console-formatted-number {
+          color: #268bd2 !important;
+        }
+        .console-formatted-object, .console-formatted-node {
+          color: #839496 !important;
+        }
+        .console-formatted-array {
+          color: #d33682 !important;
+        }
+      }
+    }
+    .metrics {
+      background: #002b36 !important;
+      .label, .top, .left, .right, .bottom {
+        color: #839496 !important;
+      }
+      .margin {
+        background: #073642 !important;
+        opacity: .95;
+        border-color: #839496 !important;
+      }
+      .border {
+        background-color: #002b36 !important;
+        border-color: #839496 !important;
+      }
+      .padding {
+        background: #073642 !important;
+        opacity: .95;
+        border-color: #839496 !important;
+      }
+      .content {
+        background-color: #002b36 !important;
+        color: #839496 !important;
+        border-color: #839496 !important;
+      }
+    }
+    > .title, .styles-sidebar-separator {
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#002b36), color-stop(0.05, #657b83), color-stop(0.05, #657b83), to(#002b36)) !important;
+      color: #839496 !important;
+      text-shadow: #073642 0 1px 0 !important;
+      border-top: 1px solid #073642 !important;
+      border-bottom: 1px solid #073642 !important;
+    }
+  }
+}
+
+/* Console Panel
+ * ===
+ * Console
+ */
+#console-view {
+  background: #002b36 !important;
+  color: #839496;
+  .monospace {
+    font-family: Inconsolata, monospace !important;
+    font-size: 12px !important; 
+  }
+  #console-messages .console-group {
+    .console-message {
+      border-bottom: 1px solid #073642 !important;
+      .console-message-text .console-formatted-array {
+        color: #d33682;
+        .console-formatted-node {
+          .webkit-html-comment {
+            color: #586e75 !important;
+          }
+          .webkit-html-doctype {
+            color: #839496 !important;
+          }
+          .webkit-html-attribute {
+            .webkit-html-attribute-name {
+              color: #839496 !important;
+            }
+            .webkit-html-attribute-value {
+              color: #859900 !important;
+            }
+          }
+          .webkit-html-tag {
+            color: #839496 !important;
+            .webkit-html-tag-name {
+              color: #268bd2 !important;
+            }
+          }
+          .webkit-html-text-node {
+            color: #657b83 !important;
+          }
+          .webkit-html-css-node {
+            .webkit-css-selector {
+              color: #839496 !important;
+            }
+            .webkit-css-property {
+              color: #dc322f !important;
+            }
+            .webkit-css-keyword, .webkit-css-number {
+              color: #268bd2 !important;
+            }
+          }
+        }
+      }
+      .console-formatted-string {
+        color: #859900 !important;
+      }
+      .console-formatted-number {
+        color: #268bd2 !important;
+      }
+      .webkit-html-resource-link {
+        color: #839496 !important;
+      }
+      .console-formatted-null {
+        color: #586e75 !important;
+      }
+      .console-formatted-string {
+        color: #859900 !important;
+      }
+      .console-formatted-number {
+        color: #268bd2 !important;
+      }
+      .console-formatted-object {
+        color: #6c71c4 !important;
+        .header .title {
+          color: #268bd2 !important;
+        }
+        .properties {
+          color: #268bd2;
+          .name {
+            color: #b58900 !important;
+          }
+          .dimmed {
+            color: #cb4b16 !important;
+          }
+          .console-formatted-null {
+            color: #586e75 !important;
+          }
+          .console-formatted-string {
+            color: #859900 !important;
+          }
+          .console-formatted-number {
+            color: #268bd2 !important; 
+          }
+          .console-formatted-object, .console-formatted-function {
+            color: #6c71c4 !important;
+          }
+          .console-formatted-array {
+            color: #d33682 !important;
+          }
+        }
+      }
+      .console-formatted-function {
+        color: #6c71c4 !important;
+      }
+      .console-formatted-array {
+        color: #d33682 !important; 
+      } 
+    }
+    .console-error-level .console-message-text {
+      color: #dc322f !important;
+      .console-formatted-object {
+        .header .title {
+          color: #dc322f !important;  
+        }
+        .properties {
+          color: #268bd2;
+          .name {
+            color: #b58900 !important;  
+          }
+          .dimmed {
+            color: #cb4b16 !important;
+          }
+          .console-formatted-null {
+            color: #586e75 !important;
+          }
+          .console-formatted-string {
+            color: #859900 !important; 
+          }
+          .console-formatted-number {
+            color: #268bd2 !important; 
+          }
+          .console-formatted-object, .console-formatted-function {
+            color: #6c71c4 !important; 
+          }
+          .console-formatted-array {
+            color: #d33682 !important; 
+          }
+        }
+      }
+      .console-formated-node .header .title {
+        color: #268bd2 !important; 
+      }
+    }
+    .console-warning-level {
+      color: #b58900 !important; 
+    } 
+  }
+}
+
