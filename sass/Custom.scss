@@ -1,7 +1,7 @@
 /*=== Custom User Stylesheet for Webkit Web Inspectors
-@desc		This Custom User Stylesheet contains styles for the following themes, Solarized Dark and Solarized Light.
-@author	Roger Steve Ruiz
-@email	hi@rogeruiz.com
+@desc   This Custom User Stylesheet contains styles for the following themes, Solarized Dark and Solarized Light.
+@author Roger Steve Ruiz
+@email  hi@rogeruiz.com
 ==================================================*/
 
 /* Known Bugs
@@ -17,7 +17,7 @@
  */
 #elements-content {
   background-color: #002b36;
-  font-family: M+ 1m , monospace !important;
+  font-family: "M+ 1mn" , monospace !important;
   font-size: 12px !important;
   font-weight: 100;
   .hovered,
@@ -79,7 +79,7 @@
   }
   .pane {
     .monospace {
-      font-family: Inconsolata, monospace !important;
+      font-family: "M+ 1mn", monospace !important;
       font-size: 12px !important;
     }
     .styles-section {
@@ -182,7 +182,7 @@
   background: #002b36 !important;
   color: #839496;
   .monospace {
-    font-family: Inconsolata, monospace !important;
+    font-family: "M+ 1mn", monospace !important;
     font-size: 12px !important; 
   }
   #console-messages .console-group {
