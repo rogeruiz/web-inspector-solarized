@@ -4,4 +4,4 @@ ___
 
 This is a Compass project of the Solarized color theme for the Webkit Web Inspector.
 
-![Demo](img/demo.png)
+![Demo](https://github.com/rogeruiz/web-inspector-solarized/raw/master/img/demo.png)
