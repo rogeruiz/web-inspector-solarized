@@ -17,7 +17,7 @@
  */
 #elements-content {
   background-color: #002b36;
-  font-family: "M+ 1mn" , monospace !important;
+  font-family: "mplus-1m-light", monospace !important;
   font-size: 12px !important;
   font-weight: 100;
   .hovered,
@@ -79,7 +79,7 @@
   }
   .pane {
     .monospace {
-      font-family: "M+ 1mn", monospace !important;
+      font-family: "mplus-1m-light", monospace !important;
       font-size: 12px !important;
     }
     .styles-section {
@@ -182,7 +182,7 @@
   background: #002b36 !important;
   color: #839496;
   .monospace {
-    font-family: "M+ 1mn", monospace !important;
+    font-family: "mplus-1m-light", monospace !important;
     font-size: 12px !important; 
   }
   #console-messages .console-group {

@@ -5,7 +5,7 @@
 ==================================================*/
 /* Known Bugs === The !important implementation is necessary on certain styles because the user-agent stylesheet & Custom.css file seem to be at odds when it comes to defining the Web Inspectors tools */
 /* Elements Panel === Markup */
-#elements-content { background-color: #002b36; font-family: "M+ 1mn" , monospace !important; font-size: 12px !important; font-weight: 100; }
+#elements-content { background-color: #002b36; font-family: "mplus-1m-light" , monospace !important; font-size: 12px !important; font-weight: 100; }
 #elements-content .hovered, #elements-content .selected, #elements-content .selected { background-color: #073642; color: #93a1a1 !important; }
 #elements-content .highlight { color: #93a1a1 !important; }
 #elements-content ol { border-left: 1px solid #073642; }
@@ -23,7 +23,7 @@
 /* Elements Panel === Sidebar */
 #elements-sidebar { background: #002b36 !important; }
 #elements-sidebar .source-code { background: #073642 !important; color: #839496 !important; }
-#elements-sidebar .pane .monospace { font-family: "M+ 1mn", monospace !important; font-size: 12px !important; }
+#elements-sidebar .pane .monospace { font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; }
 #elements-sidebar .pane .styles-section { background: #002b36 !important; color: #839496; }
 #elements-sidebar .pane .styles-section.read-only { background: #073642 !important; }
 #elements-sidebar .pane .styles-section.read-only .subtitle { background-color: #002b36 !important; color: #839496 !important; }
@@ -51,7 +51,7 @@
 
 /* Console Panel === Console */
 #console-view { background: #002b36 !important; color: #839496; }
-#console-view .monospace { font-family: "M+ 1mn", monospace !important; font-size: 12px !important; }
+#console-view .monospace { font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; }
 #console-view #console-messages .console-group .console-message { border-bottom: 1px solid #073642 !important; }
 #console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array { color: #d33682; }
 #console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array .console-formatted-node .webkit-html-comment { color: #586e75 !important; }
