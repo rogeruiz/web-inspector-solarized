@@ -176,6 +176,66 @@
   }
 }
 
+/* Resources Panel
+ * ===
+ * Split-view
+ */
+.panel.resources.visible {
+  .split-view.visible {
+    .split-view-contents {
+      &.diff-container {
+        .resource-view {
+          &.image {
+            .title {}
+            .infoList {
+              dt {}
+              dd {}
+            }
+          }
+        }
+        .storage-view.visible{}
+      }
+      .script-view {
+        .text-editor-contents {
+          .webkit-line-content {
+            .webkit-css-comment {}
+            .webkit-css-selector {}
+            .webkit-css-property {}
+            .webkit-css-keyword {}
+            .webkit-css-number {}
+            .webkit-html-tag {}
+            .webkit-html-attribute-name {}
+            .webkit-html-attribute-value {}
+            .webkit-javascript-ident {}
+            .webkit-javascript-string {}
+            .webkit-javascript-number {}
+            .webkit-javascript-keyword {}
+            .webkit-javascript-regexp {}
+          }
+        }
+      }
+      ol {}
+      .children {}
+      .parent {}
+      .frame-storage-tree-item {
+        .resource-sidebar-tree-item {
+          .base-storage-tree-element-title {}
+          &.resources-category-images {}
+          &.resources-category-documents {}        
+        }
+      }
+      .database-storage-tree-item {
+        .base-storage-tree-element-title {}
+      }
+      .domstorage-storage-tree-item {
+        &.local-storage{}
+        &.session-storage {}
+      }
+      .cookie-storage-tree-item {}
+      .application-cache-storage-item {}
+    }
+  }
+}
 /* Console Panel
  * ===
  * Console
