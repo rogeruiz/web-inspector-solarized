@@ -178,7 +178,39 @@
 
 /* Resources Panel
  * ===
- * Split-view
+ * Split View
+ */
+.panel.resources.visible {
+  .split-view.visible {
+    .split-view-contents {
+      &.sidebar {
+        ol {}
+        .children {}
+        .parent {}
+        .frame-storage-tree-item {
+          .resource-sidebar-tree-item {
+            .base-storage-tree-element-title {}
+            &.resources-category-images {}
+            &.resources-category-documents {}        
+          }
+        }
+        .database-storage-tree-item {
+          .base-storage-tree-element-title {}
+        }
+        .domstorage-storage-tree-item {
+          &.local-storage{}
+          &.session-storage {}
+        }
+        .cookie-storage-tree-item {}
+        .application-cache-storage-item {}
+      }
+    }
+  }
+}
+
+/* Resources Panel
+ * ===
+ * Diff Container
  */
 .panel.resources.visible {
   .split-view.visible {
@@ -194,48 +226,32 @@
           }
         }
         .storage-view.visible{}
-      }
-      .script-view {
-        .text-editor-contents {
-          .webkit-line-content {
-            .webkit-css-comment {}
-            .webkit-css-selector {}
-            .webkit-css-property {}
-            .webkit-css-keyword {}
-            .webkit-css-number {}
-            .webkit-html-tag {}
-            .webkit-html-attribute-name {}
-            .webkit-html-attribute-value {}
-            .webkit-javascript-ident {}
-            .webkit-javascript-string {}
-            .webkit-javascript-number {}
-            .webkit-javascript-keyword {}
-            .webkit-javascript-regexp {}
+        .script-view {
+          .text-editor {
+            .text-editor-contents {
+              .webkit-line-content {
+                .webkit-css-comment {}
+                .webkit-css-selector {}
+                .webkit-css-property {}
+                .webkit-css-keyword {}
+                .webkit-css-number {}
+                .webkit-html-tag {}
+                .webkit-html-attribute-name {}
+                .webkit-html-attribute-value {}
+                .webkit-javascript-ident {}
+                .webkit-javascript-string {}
+                .webkit-javascript-number {}
+                .webkit-javascript-keyword {}
+                .webkit-javascript-regexp {}
+              }
+            }
           }
         }
       }
-      ol {}
-      .children {}
-      .parent {}
-      .frame-storage-tree-item {
-        .resource-sidebar-tree-item {
-          .base-storage-tree-element-title {}
-          &.resources-category-images {}
-          &.resources-category-documents {}        
-        }
-      }
-      .database-storage-tree-item {
-        .base-storage-tree-element-title {}
-      }
-      .domstorage-storage-tree-item {
-        &.local-storage{}
-        &.session-storage {}
-      }
-      .cookie-storage-tree-item {}
-      .application-cache-storage-item {}
     }
   }
 }
+
 /* Console Panel
  * ===
  * Console
