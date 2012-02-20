@@ -5,7 +5,7 @@
 ==================================================*/
 /* Known Bugs === The !important implementation is necessary on certain styles because the user-agent stylesheet & Custom.css file seem to be at odds when it comes to defining the Web Inspectors tools */
 /* Elements Panel === Markup */
-#elements-content { background-color: #002b36; font-family: "mplus-1m-light" , monospace !important; font-size: 12px !important; font-weight: 100; }
+#elements-content { background-color: #002b36; font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; font-weight: 100; }
 #elements-content .hovered, #elements-content .selected, #elements-content .selected { background-color: #073642; color: #93a1a1 !important; }
 #elements-content .highlight { color: #93a1a1 !important; }
 #elements-content ol { border-left: 1px solid #073642; }
@@ -49,6 +49,7 @@
 #elements-sidebar .pane .metrics .content { background-color: #002b36 !important; color: #839496 !important; border-color: #839496 !important; }
 #elements-sidebar .pane > .title, #elements-sidebar .pane .styles-sidebar-separator { background-image: -webkit-gradient(linear, left top, left bottom, from(#002b36), color-stop(0.05, #657b83), color-stop(0.05, #657b83), to(#002b36)) !important; color: #839496 !important; text-shadow: #073642 0 1px 0 !important; border-top: 1px solid #073642 !important; border-bottom: 1px solid #073642 !important; }
 
+/* Resources Panel === Split-view */
 /* Console Panel === Console */
 #console-view { background: #002b36 !important; color: #839496; }
 #console-view .monospace { font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; }

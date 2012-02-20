@@ -18,52 +18,52 @@
  * Markup
  */
 #elements-content {
-  background-color: #002b36;
-  font-family: "mplus-1m-light", monospace !important;
+  background-color: $base03;
+  font-family: $mplus-1m-light;
   font-size: 12px !important;
   font-weight: 100;
   .hovered,
   .selected,
   .selected {
-    background-color: #073642;
-    color: #93a1a1 !important;
+    background-color: $base02;
+    color: $base1 !important;
   }
   .highlight {
-    color: #93a1a1 !important;
+    color: $base1 !important;
   }
   ol {
     border-left: 1px solid #073642; // tab stop
     .webkit-html-comment {
-      color: #586e75 !important;
+      color: $base01 !important;
     }
     .webkit-html-doctype {
-      color: #839496 !important;
+      color: $base0 !important;
     }
     .webkit-html-attribute .webkit-html-attribute-name {
-      color: #839496 !important;
+      color: $base0 !important;
     }
     .webkit-html-attribute .webkit-html-attribute-value {
-      color: #859900 !important;
+      color: $green !important;
     }
     .webkit-html-tag {
-      color: #839496 !important;
+      color: $base0 !important;
       .webkit-html-tag-name {
-        color: #268bd2 !important;
+        color: $blue !important;
       }
     }
     .webkit-html-text-node {
-      color: #657b83;
+      color: $base00;
     }
     .webkit-html-css-node {
       .webkit-css-selector {
-        color: #839496 !important;
+        color: $base0 !important;
       }
       .webkit-css-property {
-        color: #dc322f !important;
+        color: $red !important;
       }
       .webkit-css-keyword,
       .webkit-css-number {
-        color: #268bd2 !important;
+        color: $blue !important;
       }
     }
   }
@@ -74,101 +74,101 @@
  * Sidebar
  */
 #elements-sidebar {
-  background: #002b36 !important;
+  background: $base03 !important;
   .source-code {
-    background: #073642 !important;
-    color: #839496 !important;
+    background: $base02 !important;
+    color: $base0 !important;
   }
   .pane {
     .monospace {
-      font-family: "mplus-1m-light", monospace !important;
+      font-family: $mplus-1m-light;
       font-size: 12px !important;
     }
     .styles-section {
-      background: #002b36 !important;
-      color: #839496;
+      background: $base03 !important;
+      color: $base0;
       &.read-only {
         background: #073642 !important;
         .subtitle {
-          background-color: #002b36 !important;
-          color: #839496 !important;
+          background-color: $base03 !important;
+          color: $base0 !important;
         }
       }
       .header .subtitle .webkit-html-resource-link {
         background-color: #073642;
-        color: #839496 !important;
+        color: $base0 !important;
       }
       .properties {
         .webkit-css-property, .webkit-css-at-rule {
-          color: #dc322f !important;
+          color: $red !important;
         }
         .value {
-          color: #268bd2 !important;
+          color: $blue !important;
         }
       }
     }
     .info {
-      background: #002b36 !important;
-      color: #839496 !important;
+      background: $base03 !important;
+      color: $base0 !important;
     }
     .section {
-      background: #002b36;
+      background: $base03;
       .header .title {
-        color: #93a1a1;
+        color: $base1;
       }
       .properties {
-        color: #268bd2;
+        color: $blue;
         .name {
-          color: #b58900 !important;
+          color: $yellow !important;
         }
         .dimmed {
-          color: #cb4b16 !important;
+          color: $orange !important;
         }
         .console-formatted-null {
-          color: #586e75 !important;
+          color: $base01 !important;
         }
         .console-formatted-string {
-          color: #859900 !important;
+          color: $green !important;
         }
         .console-formatted-number {
-          color: #268bd2 !important;
+          color: $blue !important;
         }
         .console-formatted-object, .console-formatted-node {
-          color: #839496 !important;
+          color: $base0 !important;
         }
         .console-formatted-array {
-          color: #d33682 !important;
+          color: $magenta !important;
         }
       }
     }
     .metrics {
-      background: #002b36 !important;
+      background: $base03 !important;
       .label, .top, .left, .right, .bottom {
-        color: #839496 !important;
+        color: $base0 !important;
       }
       .margin {
         background: #073642 !important;
         opacity: .95;
-        border-color: #839496 !important;
+        border-color: $base0 !important;
       }
       .border {
-        background-color: #002b36 !important;
-        border-color: #839496 !important;
+        background-color: $base03 !important;
+        border-color: $base0 !important;
       }
       .padding {
         background: #073642 !important;
         opacity: .95;
-        border-color: #839496 !important;
+        border-color: $base0 !important;
       }
       .content {
-        background-color: #002b36 !important;
-        color: #839496 !important;
-        border-color: #839496 !important;
+        background-color: $base03 !important;
+        color: $base0 !important;
+        border-color: $base0 !important;
       }
     }
     > .title, .styles-sidebar-separator {
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#002b36), color-stop(0.05, #657b83), color-stop(0.05, #657b83), to(#002b36)) !important;
-      color: #839496 !important;
+      background-image: -webkit-gradient(linear, left top, left bottom, from($base03), color-stop(0.05, $base00), color-stop(0.05, $base00), to($base03)) !important;
+      color: $base0 !important;
       text-shadow: #073642 0 1px 0 !important;
       border-top: 1px solid #073642 !important;
       border-bottom: 1px solid #073642 !important;
@@ -181,146 +181,146 @@
  * Console
  */
 #console-view {
-  background: #002b36 !important;
-  color: #839496;
+  background: $base03 !important;
+  color: $base0;
   .monospace {
-    font-family: "mplus-1m-light", monospace !important;
+    font-family: $mplus-1m-light;
     font-size: 12px !important; 
   }
   #console-messages .console-group {
     .console-message {
       border-bottom: 1px solid #073642 !important;
       .console-message-text .console-formatted-array {
-        color: #d33682;
+        color: $magenta;
         .console-formatted-node {
           .webkit-html-comment {
-            color: #586e75 !important;
+            color: $base01 !important;
           }
           .webkit-html-doctype {
-            color: #839496 !important;
+            color: $base0 !important;
           }
           .webkit-html-attribute {
             .webkit-html-attribute-name {
-              color: #839496 !important;
+              color: $base0 !important;
             }
             .webkit-html-attribute-value {
-              color: #859900 !important;
+              color: $green !important;
             }
           }
           .webkit-html-tag {
-            color: #839496 !important;
+            color: $base0 !important;
             .webkit-html-tag-name {
-              color: #268bd2 !important;
+              color: $blue !important;
             }
           }
           .webkit-html-text-node {
-            color: #657b83 !important;
+            color: $base00 !important;
           }
           .webkit-html-css-node {
             .webkit-css-selector {
-              color: #839496 !important;
+              color: $base0 !important;
             }
             .webkit-css-property {
-              color: #dc322f !important;
+              color: $red !important;
             }
             .webkit-css-keyword, .webkit-css-number {
-              color: #268bd2 !important;
+              color: $blue !important;
             }
           }
         }
       }
       .console-formatted-string {
-        color: #859900 !important;
+        color: $green !important;
       }
       .console-formatted-number {
-        color: #268bd2 !important;
+        color: $blue !important;
       }
       .webkit-html-resource-link {
-        color: #839496 !important;
+        color: $base0 !important;
       }
       .console-formatted-null {
-        color: #586e75 !important;
+        color: $base01 !important;
       }
       .console-formatted-string {
-        color: #859900 !important;
+        color: $green !important;
       }
       .console-formatted-number {
-        color: #268bd2 !important;
+        color: $blue !important;
       }
       .console-formatted-object {
-        color: #6c71c4 !important;
+        color: $violet !important;
         .header .title {
-          color: #268bd2 !important;
+          color: $blue !important;
         }
         .properties {
-          color: #268bd2;
+          color: $blue;
           .name {
-            color: #b58900 !important;
+            color: $yellow !important;
           }
           .dimmed {
-            color: #cb4b16 !important;
+            color: $orange !important;
           }
           .console-formatted-null {
-            color: #586e75 !important;
+            color: $base01 !important;
           }
           .console-formatted-string {
-            color: #859900 !important;
+            color: $green !important;
           }
           .console-formatted-number {
-            color: #268bd2 !important; 
+            color: $blue !important; 
           }
           .console-formatted-object, .console-formatted-function {
-            color: #6c71c4 !important;
+            color: $violet !important;
           }
           .console-formatted-array {
-            color: #d33682 !important;
+            color: $magenta !important;
           }
         }
       }
       .console-formatted-function {
-        color: #6c71c4 !important;
+        color: $violet !important;
       }
       .console-formatted-array {
-        color: #d33682 !important; 
+        color: $magenta !important; 
       } 
     }
     .console-error-level .console-message-text {
-      color: #dc322f !important;
+      color: $red !important;
       .console-formatted-object {
         .header .title {
-          color: #dc322f !important;  
+          color: $red !important;  
         }
         .properties {
-          color: #268bd2;
+          color: $blue;
           .name {
-            color: #b58900 !important;  
+            color: $yellow !important;  
           }
           .dimmed {
-            color: #cb4b16 !important;
+            color: $orange !important;
           }
           .console-formatted-null {
-            color: #586e75 !important;
+            color: $base01 !important;
           }
           .console-formatted-string {
-            color: #859900 !important; 
+            color: $green !important; 
           }
           .console-formatted-number {
-            color: #268bd2 !important; 
+            color: $blue !important; 
           }
           .console-formatted-object, .console-formatted-function {
-            color: #6c71c4 !important; 
+            color: $violet !important; 
           }
           .console-formatted-array {
-            color: #d33682 !important; 
+            color: $magenta !important; 
           }
         }
       }
       .console-formated-node .header .title {
-        color: #268bd2 !important; 
+        color: $blue !important; 
       }
     }
     .console-warning-level {
-      color: #b58900 !important; 
+      color: $yellow !important; 
     } 
   }
 }
