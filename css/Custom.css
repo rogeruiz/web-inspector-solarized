@@ -5,10 +5,10 @@
 ==================================================*/
 /* Known Bugs === The !important implementation is necessary on certain styles because the user-agent stylesheet & Custom.css file seem to be at odds when it comes to defining the Web Inspectors tools */
 /* Elements Panel === Markup */
-#elements-content { background-color: #002b36; font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; font-weight: 100; }
-#elements-content .hovered, #elements-content .selected, #elements-content .selected { background-color: #073642; color: #93a1a1 !important; }
+#elements-content { background-color: #fdf6e3; font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; font-weight: 100; }
+#elements-content .hovered, #elements-content .selected, #elements-content .selected { background-color: #eee8d5; color: #93a1a1 !important; }
 #elements-content .highlight { color: #93a1a1 !important; }
-#elements-content ol { border-left: 1px solid #073642; }
+#elements-content ol { border-left: 1px solid #eee8d5; }
 #elements-content ol .webkit-html-comment { color: #586e75 !important; }
 #elements-content ol .webkit-html-doctype { color: #839496 !important; }
 #elements-content ol .webkit-html-attribute .webkit-html-attribute-name { color: #839496 !important; }
@@ -21,17 +21,17 @@
 #elements-content ol .webkit-html-css-node .webkit-css-keyword, #elements-content ol .webkit-html-css-node .webkit-css-number { color: #268bd2 !important; }
 
 /* Elements Panel === Sidebar */
-#elements-sidebar { background: #002b36 !important; }
-#elements-sidebar .source-code { background: #073642 !important; color: #839496 !important; }
+#elements-sidebar { background: #fdf6e3 !important; }
+#elements-sidebar .source-code { background: #eee8d5 !important; color: #839496 !important; }
 #elements-sidebar .pane .monospace { font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; }
-#elements-sidebar .pane .styles-section { background: #002b36 !important; color: #839496; }
+#elements-sidebar .pane .styles-section { background: #fdf6e3 !important; color: #839496; }
 #elements-sidebar .pane .styles-section.read-only { background: #073642 !important; }
-#elements-sidebar .pane .styles-section.read-only .subtitle { background-color: #002b36 !important; color: #839496 !important; }
+#elements-sidebar .pane .styles-section.read-only .subtitle { background-color: #fdf6e3 !important; color: #839496 !important; }
 #elements-sidebar .pane .styles-section .header .subtitle .webkit-html-resource-link { background-color: #073642; color: #839496 !important; }
 #elements-sidebar .pane .styles-section .properties .webkit-css-property, #elements-sidebar .pane .styles-section .properties .webkit-css-at-rule { color: #dc322f !important; }
 #elements-sidebar .pane .styles-section .properties .value { color: #268bd2 !important; }
-#elements-sidebar .pane .info { background: #002b36 !important; color: #839496 !important; }
-#elements-sidebar .pane .section { background: #002b36; }
+#elements-sidebar .pane .info { background: #fdf6e3 !important; color: #839496 !important; }
+#elements-sidebar .pane .section { background: #fdf6e3; }
 #elements-sidebar .pane .section .header .title { color: #93a1a1; }
 #elements-sidebar .pane .section .properties { color: #268bd2; }
 #elements-sidebar .pane .section .properties .name { color: #b58900 !important; }
@@ -41,17 +41,18 @@
 #elements-sidebar .pane .section .properties .console-formatted-number { color: #268bd2 !important; }
 #elements-sidebar .pane .section .properties .console-formatted-object, #elements-sidebar .pane .section .properties .console-formatted-node { color: #839496 !important; }
 #elements-sidebar .pane .section .properties .console-formatted-array { color: #d33682 !important; }
-#elements-sidebar .pane .metrics { background: #002b36 !important; }
+#elements-sidebar .pane .metrics { background: #fdf6e3 !important; }
 #elements-sidebar .pane .metrics .label, #elements-sidebar .pane .metrics .top, #elements-sidebar .pane .metrics .left, #elements-sidebar .pane .metrics .right, #elements-sidebar .pane .metrics .bottom { color: #839496 !important; }
 #elements-sidebar .pane .metrics .margin { background: #073642 !important; opacity: .95; border-color: #839496 !important; }
-#elements-sidebar .pane .metrics .border { background-color: #002b36 !important; border-color: #839496 !important; }
+#elements-sidebar .pane .metrics .border { background-color: #fdf6e3 !important; border-color: #839496 !important; }
 #elements-sidebar .pane .metrics .padding { background: #073642 !important; opacity: .95; border-color: #839496 !important; }
-#elements-sidebar .pane .metrics .content { background-color: #002b36 !important; color: #839496 !important; border-color: #839496 !important; }
-#elements-sidebar .pane > .title, #elements-sidebar .pane .styles-sidebar-separator { background-image: -webkit-gradient(linear, left top, left bottom, from(#002b36), color-stop(0.05, #657b83), color-stop(0.05, #657b83), to(#002b36)) !important; color: #839496 !important; text-shadow: #073642 0 1px 0 !important; border-top: 1px solid #073642 !important; border-bottom: 1px solid #073642 !important; }
+#elements-sidebar .pane .metrics .content { background-color: #fdf6e3 !important; color: #839496 !important; border-color: #839496 !important; }
+#elements-sidebar .pane > .title, #elements-sidebar .pane .styles-sidebar-separator { background-image: -webkit-gradient(linear, left top, left bottom, from(#fdf6e3), color-stop(0.05, #657b83), color-stop(0.05, #657b83), to(#002b36)) !important; color: #839496 !important; text-shadow: #073642 0 1px 0 !important; border-top: 1px solid #073642 !important; border-bottom: 1px solid #073642 !important; }
 
-/* Resources Panel === Split-view */
+/* Resources Panel === Split View */
+/* Resources Panel === Diff Container */
 /* Console Panel === Console */
-#console-view { background: #002b36 !important; color: #839496; }
+#console-view { background: #fdf6e3 !important; color: #839496; }
 #console-view .monospace { font-family: "mplus-1m-light", monospace !important; font-size: 12px !important; }
 #console-view #console-messages .console-group .console-message { border-bottom: 1px solid #073642 !important; }
 #console-view #console-messages .console-group .console-message .console-message-text .console-formatted-array { color: #d33682; }
