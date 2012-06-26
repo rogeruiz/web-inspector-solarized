@@ -18,21 +18,21 @@
  * Markup
  */
 #elements-content {
-  background-color: $base3;
+  background-color: $base03;
   font-family: $mplus-1m-light;
   font-size: 12px !important;
   font-weight: 100;
   .hovered,
   .selected,
   .selected {
-    background-color: $base2;
+    background-color: $base02;
     color: $base1 !important;
   }
   .highlight {
     color: $base1 !important;
   }
   ol {
-    border-left: 1px solid $base2; // tab stop
+    border-left: 1px solid #073642; // tab stop
     .webkit-html-comment {
       color: $base01 !important;
     }
@@ -74,9 +74,9 @@
  * Sidebar
  */
 #elements-sidebar {
-  background: $base3 !important;
+  background: $base03 !important;
   .source-code {
-    background: $base2 !important;
+    background: $base02 !important;
     color: $base0 !important;
   }
   .pane {
@@ -85,12 +85,12 @@
       font-size: 12px !important;
     }
     .styles-section {
-      background: $base3 !important;
+      background: $base03 !important;
       color: $base0;
       &.read-only {
         background: #073642 !important;
         .subtitle {
-          background-color: $base3 !important;
+          background-color: $base03 !important;
           color: $base0 !important;
         }
       }
@@ -108,11 +108,11 @@
       }
     }
     .info {
-      background: $base3 !important;
+      background: $base03 !important;
       color: $base0 !important;
     }
     .section {
-      background: $base3;
+      background: $base03;
       .header .title {
         color: $base1;
       }
@@ -142,7 +142,7 @@
       }
     }
     .metrics {
-      background: $base3 !important;
+      background: $base03 !important;
       .label, .top, .left, .right, .bottom {
         color: $base0 !important;
       }
@@ -152,7 +152,7 @@
         border-color: $base0 !important;
       }
       .border {
-        background-color: $base3 !important;
+        background-color: $base03 !important;
         border-color: $base0 !important;
       }
       .padding {
@@ -161,13 +161,13 @@
         border-color: $base0 !important;
       }
       .content {
-        background-color: $base3 !important;
+        background-color: $base03 !important;
         color: $base0 !important;
         border-color: $base0 !important;
       }
     }
     > .title, .styles-sidebar-separator {
-      background-image: -webkit-gradient(linear, left top, left bottom, from($base3), color-stop(0.05, $base00), color-stop(0.05, $base00), to($base03)) !important;
+      background-image: -webkit-gradient(linear, left top, left bottom, from($base03), color-stop(0.05, $base00), color-stop(0.05, $base00), to($base03)) !important;
       color: $base0 !important;
       text-shadow: #073642 0 1px 0 !important;
       border-top: 1px solid #073642 !important;
@@ -257,7 +257,7 @@
  * Console
  */
 #console-view {
-  background: $base3 !important;
+  background: $base03 !important;
   color: $base0;
   .monospace {
     font-family: $mplus-1m-light;
