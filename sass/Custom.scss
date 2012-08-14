@@ -123,6 +123,7 @@
         }
         .dimmed {
           color: $orange !important;
+          opacity: .8 !important;
         }
         .console-formatted-null {
           color: $base01 !important;
@@ -323,10 +324,14 @@
       .console-formatted-number {
         color: $blue !important;
       }
-      .console-formatted-object {
+      .console-formatted-object,
+      .console-formatted-array {
         color: $violet !important;
         .header .title {
           color: $blue !important;
+        }
+        .name {
+          color: $yellow !important;
         }
         .properties {
           color: $blue;
@@ -335,6 +340,7 @@
           }
           .dimmed {
             color: $orange !important;
+            opacity: .8 !important;
           }
           .console-formatted-null {
             color: $base01 !important;
@@ -347,6 +353,31 @@
           }
           .console-formatted-object, .console-formatted-function {
             color: $violet !important;
+          }
+          .console-formatted-array {
+            color: $magenta !important;
+          }
+        }
+        .properties {
+          color: $blue;
+          .name {
+            color: $yellow !important;
+          }
+          .dimmed {
+            color: $orange !important;
+            opacity: .8 !important;
+          }
+          .console-formatted-null {
+            color: $base01 !important;
+          }
+          .console-formatted-string {
+            color: $green !important;
+          }
+          .console-formatted-number {
+            color: $blue !important;
+          }
+          .console-formatted-object, .console-formatted-node {
+            color: $base0 !important;
           }
           .console-formatted-array {
             color: $magenta !important;
@@ -369,10 +400,11 @@
         .properties {
           color: $blue;
           .name {
-            color: $yellow !important;  
+            color: $yellow !important;
           }
           .dimmed {
             color: $orange !important;
+            opacity: .8 !important;
           }
           .console-formatted-null {
             color: $base01 !important;
